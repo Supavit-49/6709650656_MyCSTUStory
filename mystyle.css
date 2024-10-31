@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #eeb553;
-    text-align: center; /* จัดตำแหน่งข้อความและภาพ */
+    text-align: center;
 }
 
 header {
@@ -15,8 +15,8 @@ header {
 
 img, video {
     display: block;
-    max-width: 300px; /* ขนาดกว้างสูงสุดใหม่เป็นครึ่งหนึ่งของขนาดก่อนหน้า */
-    height: auto; /* ให้รักษาสัดส่วนของภาพ */
+    max-width: 300px;
+    height: auto;
 }
 
 section {
@@ -26,4 +26,43 @@ section {
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+
+@media (max-width: 360px) {
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        padding: 8px; 
+    }
+
+    img, video {
+        max-width: 100%;
+    }
+
+    section {
+        padding: 10px;
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 361px) and ((max-width: 760px)) {
+    body {
+        font-size: 20px;
+    }
+
+    header {
+        padding: 10px; 
+    }
+
+    img, video {
+        max-width: 100%;
+    }
+
+    section {
+        padding: 10px;
+        max-width: 100%;
+    }
 }
